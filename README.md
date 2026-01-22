@@ -48,11 +48,22 @@ Dependiendo de tu herramienta de IA:
 
 ## 🗂️ Lista de Skills
 
+### 🧠 Divisiones (Orquestadores)
+
+| División | Descripción |
+|----------|-------------|
+| [0-ceo](./0-ceo/) | Orquestador principal, estrategia y planificación |
+| [1-crecimiento](./1-crecimiento/) | Marketing, ventas y adquisición de clientes |
+| [2-producto](./2-producto/) | Ingeniería, desarrollo y deployment |
+| [3-operaciones](./3-operaciones/) | Procesos, documentación y operaciones |
+
+### 📋 Skills Individuales
+
 Los skills están organizados por **numeración**:
 - **0.x** — Estrategia y Planificación (CEO)
-- **1.x** — Marketing y Ventas (Growth)
-- **2.x** — Desarrollo e Ingeniería (Product)
-- **3.x** — Procesos y Documentación (Operations)
+- **1.x** — Marketing y Ventas (Crecimiento)
+- **2.x** — Desarrollo e Ingeniería (Producto)
+- **3.x** — Procesos y Documentación (Operaciones)
 
 | # | Skill | Descripción |
 |---|-------|-------------|
