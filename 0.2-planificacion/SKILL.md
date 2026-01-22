@@ -119,7 +119,7 @@ Después de guardar el plan, ofrece opciones de ejecución:
 
 ## Créditos
 
-> 🚀 **Creado por [100x](https://www.100x.mx)** — Agentes de IA para empresas que quieren crecer 100x.
+> 🚀 **Compilado y Traducido por [100x](https://www.100x.mx)** — Agentes de IA para empresas que quieren crecer 100x.
 >
 > 📚 Más skills y tutoriales en [github.com/agentes100x/agentes-100x](https://github.com/agentes100x/agentes-100x)
 >
