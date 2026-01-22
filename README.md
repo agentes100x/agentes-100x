@@ -70,6 +70,8 @@ Los skills están organizados por **numeración**:
 | 0.1 | [lluvia-de-ideas](./0.1-lluvia-de-ideas/) | Transforma ideas en diseños completos |
 | 0.2 | [planificacion](./0.2-planificacion/) | Crea planes de implementación detallados |
 | 0.3 | [creacion-de-skills](./0.3-creacion-de-skills/) | Construye nuevos skills |
+| 0.4 | [solucion-de-problemas](./0.4-solucion-de-problemas/) | Patrones de manejo de errores y debugging |
+| 1.1 | [identidad-de-marca](./1.1-identidad-de-marca/) | Guías de marca, tokens de diseño, voz/tono |
 
 *Más skills próximamente...*
 
