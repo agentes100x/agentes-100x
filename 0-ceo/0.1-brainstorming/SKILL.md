@@ -1,57 +1,57 @@
 ---
 name: brainstorming
-description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
+description: "DEBES usar esto antes de cualquier trabajo creativo - crear funciones, construir componentes, agregar funcionalidad o modificar comportamiento. Explora la intención del usuario, requisitos y diseño antes de implementar."
 ---
 
-# Brainstorming Ideas Into Designs
+# Convertir Ideas en Diseños
 
-## Overview
+## Resumen
 
-Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+Ayuda a transformar ideas en diseños y especificaciones completas a través de un diálogo colaborativo natural.
 
-Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the design in small sections (200-300 words), checking after each section whether it looks right so far.
+Comienza entendiendo el contexto actual del proyecto, luego haz preguntas una a la vez para refinar la idea. Una vez que entiendas lo que estás construyendo, presenta el diseño en secciones pequeñas (200-300 palabras), verificando después de cada sección si todo va bien hasta ahora.
 
-## The Process
+## El Proceso
 
-**Understanding the idea:**
-- Check out the current project state first (files, docs, recent commits)
-- Ask questions one at a time to refine the idea
-- Prefer multiple choice questions when possible, but open-ended is fine too
-- Only one question per message - if a topic needs more exploration, break it into multiple questions
-- Focus on understanding: purpose, constraints, success criteria
+**Entendiendo la idea:**
+- Primero revisa el estado actual del proyecto (archivos, docs, commits recientes)
+- Haz preguntas una a la vez para refinar la idea
+- Prefiere preguntas de opción múltiple cuando sea posible, pero las abiertas también están bien
+- Solo una pregunta por mensaje - si un tema necesita más exploración, divídelo en múltiples preguntas
+- Enfócate en entender: propósito, restricciones, criterios de éxito
 
-**Exploring approaches:**
-- Propose 2-3 different approaches with trade-offs
-- Present options conversationally with your recommendation and reasoning
-- Lead with your recommended option and explain why
+**Explorando enfoques:**
+- Propón 2-3 enfoques diferentes con sus pros y contras
+- Presenta opciones de manera conversacional con tu recomendación y razonamiento
+- Lidera con tu opción recomendada y explica por qué
 
-**Presenting the design:**
-- Once you believe you understand what you're building, present the design
-- Break it into sections of 200-300 words
-- Ask after each section whether it looks right so far
-- Cover: architecture, components, data flow, error handling, testing
-- Be ready to go back and clarify if something doesn't make sense
+**Presentando el diseño:**
+- Una vez que creas entender lo que estás construyendo, presenta el diseño
+- Divídelo en secciones de 200-300 palabras
+- Pregunta después de cada sección si todo va bien hasta ahora
+- Cubre: arquitectura, componentes, flujo de datos, manejo de errores, testing
+- Prepárate para volver atrás y clarificar si algo no tiene sentido
 
-## After the Design
+## Después del Diseño
 
-**Documentation:**
-- Write the validated design to `docs/plans/YYYY-MM-DD-<topic>-design.md`
-- Use writing-clearly-and-concisely skill if available
-- Commit the design document to git
+**Documentación:**
+- Escribe el diseño validado en `docs/plans/YYYY-MM-DD-<tema>-design.md`
+- Usa el skill writing-clearly-and-concisely si está disponible
+- Haz commit del documento de diseño a git
 
-**Implementation (if continuing):**
-- Ask: "Ready to set up for implementation?"
-- Use using-git-worktrees to create isolated workspace
-- Use planning to create detailed implementation plan
+**Implementación (si continúas):**
+- Pregunta: "¿Listo para configurar la implementación?"
+- Usa using-git-worktrees para crear un espacio de trabajo aislado
+- Usa planning para crear un plan de implementación detallado
 
-## Key Principles
+## Principios Clave
 
-- **One question at a time** - Don't overwhelm with multiple questions
-- **Multiple choice preferred** - Easier to answer than open-ended when possible
-- **YAGNI ruthlessly** - Remove unnecessary features from all designs
-- **Explore alternatives** - Always propose 2-3 approaches before settling
-- **Incremental validation** - Present design in sections, validate each
-- **Be flexible** - Go back and clarify when something doesn't make sense
+- **Una pregunta a la vez** - No abrumes con múltiples preguntas
+- **Opción múltiple preferida** - Más fácil de responder que preguntas abiertas cuando sea posible
+- **YAGNI sin piedad** - Elimina funcionalidades innecesarias de todos los diseños
+- **Explora alternativas** - Siempre propón 2-3 enfoques antes de decidir
+- **Validación incremental** - Presenta el diseño en secciones, valida cada una
+- **Sé flexible** - Regresa y clarifica cuando algo no tenga sentido
 
 ---
 

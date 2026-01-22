@@ -1,119 +1,119 @@
 ---
 name: planning
-description: Use when you have a spec or requirements for a multi-step task, before touching code
+description: Úsalo cuando tengas especificaciones o requisitos para una tarea de múltiples pasos, antes de tocar código
 ---
 
-# Writing Plans
+# Escribiendo Planes
 
-## Overview
+## Resumen
 
-Write comprehensive implementation plans assuming the engineer has zero context for our codebase and questionable taste. Document everything they need to know: which files to touch for each task, code, testing, docs they might need to check, how to test it. Give them the whole plan as bite-sized tasks. DRY. YAGNI. TDD. Frequent commits.
+Escribe planes de implementación completos asumiendo que el ingeniero no tiene contexto sobre nuestro código base y tiene gusto cuestionable. Documenta todo lo que necesita saber: qué archivos tocar para cada tarea, código, testing, documentación que podría necesitar revisar, cómo probarlo. Dale el plan completo como tareas pequeñas. DRY. YAGNI. TDD. Commits frecuentes.
 
-Assume they are a skilled developer, but know almost nothing about our toolset or problem domain. Assume they don't know good test design very well.
+Asume que es un desarrollador habilidoso, pero no sabe casi nada sobre nuestras herramientas o dominio del problema. Asume que no conoce bien el buen diseño de tests.
 
-**Announce at start:** "I'm using the planning skill to create the implementation plan."
+**Anuncia al inicio:** "Estoy usando el skill de planning para crear el plan de implementación."
 
-**Context:** This should be run in a dedicated worktree (created by brainstorming skill).
+**Contexto:** Esto debería ejecutarse en un worktree dedicado (creado por el skill de brainstorming).
 
-**Save plans to:** `docs/plans/YYYY-MM-DD-<feature-name>.md`
+**Guarda planes en:** `docs/plans/YYYY-MM-DD-<nombre-feature>.md`
 
-## Bite-Sized Task Granularity
+## Granularidad de Tareas Pequeñas
 
-**Each step is one action (2-5 minutes):**
-- "Write the failing test" - step
-- "Run it to make sure it fails" - step
-- "Implement the minimal code to make the test pass" - step
-- "Run the tests and make sure they pass" - step
-- "Commit" - step
+**Cada paso es una acción (2-5 minutos):**
+- "Escribir el test que falla" - paso
+- "Ejecutarlo para asegurar que falle" - paso
+- "Implementar el código mínimo para que pase el test" - paso
+- "Ejecutar los tests y asegurar que pasen" - paso
+- "Commit" - paso
 
-## Plan Document Header
+## Encabezado del Documento del Plan
 
-**Every plan MUST start with this header:**
+**Cada plan DEBE comenzar con este encabezado:**
 
 ```markdown
-# [Feature Name] Implementation Plan
+# Plan de Implementación: [Nombre del Feature]
 
-> **For Agent:** REQUIRED SUB-SKILL: Use executing-plans to implement this plan task-by-task.
+> **Para el Agente:** SUB-SKILL REQUERIDO: Usa executing-plans para implementar este plan tarea por tarea.
 
-**Goal:** [One sentence describing what this builds]
+**Objetivo:** [Una oración describiendo qué construye esto]
 
-**Architecture:** [2-3 sentences about approach]
+**Arquitectura:** [2-3 oraciones sobre el enfoque]
 
-**Tech Stack:** [Key technologies/libraries]
+**Stack Tecnológico:** [Tecnologías/librerías clave]
 
 ---
 ```
 
-## Task Structure
+## Estructura de Tarea
 
 ```markdown
-### Task N: [Component Name]
+### Tarea N: [Nombre del Componente]
 
-**Files:**
-- Create: `exact/path/to/file.py`
-- Modify: `exact/path/to/existing.py:123-145`
-- Test: `tests/exact/path/to/test.py`
+**Archivos:**
+- Crear: `ruta/exacta/al/archivo.py`
+- Modificar: `ruta/exacta/al/existente.py:123-145`
+- Test: `tests/ruta/exacta/al/test.py`
 
-**Step 1: Write the failing test**
-
-```python
-def test_specific_behavior():
-    result = function(input)
-    assert result == expected
-```
-
-**Step 2: Run test to verify it fails**
-
-Run: `pytest tests/path/test.py::test_name -v`
-Expected: FAIL with "function not defined"
-
-**Step 3: Write minimal implementation**
+**Paso 1: Escribir el test que falla**
 
 ```python
-def function(input):
-    return expected
+def test_comportamiento_especifico():
+    resultado = funcion(entrada)
+    assert resultado == esperado
 ```
 
-**Step 4: Run test to verify it passes**
+**Paso 2: Ejecutar test para verificar que falle**
 
-Run: `pytest tests/path/test.py::test_name -v`
-Expected: PASS
+Ejecutar: `pytest tests/ruta/test.py::nombre_test -v`
+Esperado: FALLA con "función no definida"
 
-**Step 5: Commit**
+**Paso 3: Escribir implementación mínima**
+
+```python
+def funcion(entrada):
+    return esperado
+```
+
+**Paso 4: Ejecutar test para verificar que pase**
+
+Ejecutar: `pytest tests/ruta/test.py::nombre_test -v`
+Esperado: PASA
+
+**Paso 5: Commit**
 
 ```bash
-git add tests/path/test.py src/path/file.py
-git commit -m "feat: add specific feature"
+git add tests/ruta/test.py src/ruta/archivo.py
+git commit -m "feat: agregar función específica"
 ```
 ```
 
-## Remember
-- Exact file paths always
-- Complete code in plan (not "add validation")
-- Exact commands with expected output
-- Reference relevant skills with @ syntax
-- DRY, YAGNI, TDD, frequent commits
+## Recuerda
+- Rutas de archivos exactas siempre
+- Código completo en el plan (no "agregar validación")
+- Comandos exactos con salida esperada
+- Referencia skills relevantes con sintaxis @
+- DRY, YAGNI, TDD, commits frecuentes
 
-## Execution Handoff
+## Entrega de Ejecución
 
-After saving the plan, offer execution choice:
+Después de guardar el plan, ofrece opciones de ejecución:
 
-**"Plan complete and saved to `docs/plans/<filename>.md`. Two execution options:**
+**"Plan completo y guardado en `docs/plans/<archivo>.md`. Dos opciones de ejecución:**
 
-**1. Subagent-Driven (this session)** - I dispatch fresh subagent per task, review between tasks, fast iteration
+**1. Subagent-Driven (esta sesión)** - Lanzo un subagente fresco por tarea, reviso entre tareas, iteración rápida
 
-**2. Parallel Session (separate)** - Open new session with executing-plans, batch execution with checkpoints
+**2. Sesión Paralela (separada)** - Abre nueva sesión con executing-plans, ejecución por lotes con checkpoints
 
-**Which approach?"**
+**¿Qué enfoque prefieres?"**
 
-**If Subagent-Driven chosen:**
-- **REQUIRED SUB-SKILL:** Use subagent-driven-development
-- Stay in this session
-- Fresh subagent per task + code review
+**Si elige Subagent-Driven:**
+- **SUB-SKILL REQUERIDO:** Usa subagent-driven-development
+- Quédate en esta sesión
+- Subagente fresco por tarea + revisión de código
 
-**If Parallel Session chosen:**
-- Guide them to open new session in worktree
-- **REQUIRED SUB-SKILL:** New session uses executing-plans
+**Si elige Sesión Paralela:**
+- Guíalo a abrir nueva sesión en worktree
+- **SUB-SKILL REQUERIDO:** Nueva sesión usa executing-plans
 
 ---
 
