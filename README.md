@@ -66,9 +66,9 @@ Dependiendo de tu herramienta de IA:
 
 | Skill | Descripción |
 |-------|-------------|
-| [0.1-brainstorming](./0-ceo/0.1-brainstorming/) | Transforma ideas en diseños completos |
-| [0.2-planning](./0-ceo/0.2-planning/) | Crea planes de implementación detallados |
-| [0.3-creating-skills](./0-ceo/0.3-creating-skills/) | Construye nuevos skills |
+| [0.1-lluvia-de-ideas](./0-ceo/0.1-lluvia-de-ideas/) | Transforma ideas en diseños completos |
+| [0.2-planificacion](./0-ceo/0.2-planificacion/) | Crea planes de implementación detallados |
+| [0.3-creacion-de-skills](./0-ceo/0.3-creacion-de-skills/) | Construye nuevos skills |
 
 </details>
 
